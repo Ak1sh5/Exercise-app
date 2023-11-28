@@ -1,0 +1,8 @@
+
+{
+    "/api": {
+      "target": "https://rapidapi.com",
+      "secure": false
+    }
+  }
+  
