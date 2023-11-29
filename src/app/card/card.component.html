@@ -1,55 +1,11 @@
-<p>card works!</p>
-
-<!-- card.component.html -->
 <div class="excersise-info" *ngIf="data">
-  <div *ngFor="let item of data.slice(0, 6)">
-    <p>{{ item.bodyPart }}</p>
-    <p>{{ item.equipment }}</p>
-    <p>{{ item.instructions }}</p>
-    <p>{{ item.target }}</p>
+  <div *ngFor="let item of data" class="card">
+     <div class="thumbnail-row">
+        <img class="thumbnail" src="{{item.gifUrl}}">    
+        </div>
+    <p class="body-part">Body part: {{ item.bodyPart }}</p>
+    <p class="equipment">Equipment Required: {{ item.equipment }}</p>
+    <p class="instructions">Instructions: {{ item.instructions }}</p>
 
-    <!-- Add more template code to display other properties as needed -->
   </div>
 </div>
-gifUrl
-: 
-"https://v2.exercisedb.io/image/UyQk4ODZViDrTO"
-instru
-: 
-"Place your hands behind your head with your elbows pointing outwards."
-2
-: 
-"Engaging your abs, slowly lift your upper body off the ground, curling forward until your torso is at a 45-degree angle."
-3
-: 
-"Pause for a moment at the top, then slowly lower your upper body back down to the starting position."
-4
-: 
-"Repeat for the desired number of repetitions."
-length
-: 
-5
-[[Prototype]]
-: 
-Array(0)
-name
-: 
-"3/4 sit-up"
-secondaryMuscles
-: 
-Array(2)
-0
-: 
-"hip flexors"
-1
-: 
-"lower back"
-length
-: 
-2
-[[Prototype]]
-: 
-Array(0)
-target
-: 
-"abs"

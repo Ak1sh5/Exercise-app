@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { HomeComponent } from './home/home.component';
 import { CardComponent } from './card/card.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { CardComponent } from './card/card.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

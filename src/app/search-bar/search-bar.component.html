@@ -1,7 +1,5 @@
-<p>search-bar works!</p>
-
-<form>
-    <input type="text" id="search-input" placeholder="Enter the excersise name">
-
-    <button id="search-button" type="submit">Search</button>
+<!-- search-bar.component.html -->
+<form [formGroup]="searchForm" (ngSubmit)="onSearch()">
+  <input type="text" id="search-input" formControlName="exerciseName" placeholder="Enter the body part name">
+  <button id="search-button" type="submit">Search</button>
 </form>
